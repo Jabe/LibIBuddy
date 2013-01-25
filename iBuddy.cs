@@ -117,7 +117,7 @@ namespace Gk.LibIBuddy
                     {
                         _turn = Turn.Off;
                     }
-                    else if ((_danceTimeout % (350 / _threadWaitTime)) == 0)
+                    else if ((_danceTimeout % (200 / _threadWaitTime)) == 0)
                     {
                         _turn = _turn == Turn.Left ? Turn.Right : Turn.Left;
                     }
@@ -131,7 +131,7 @@ namespace Gk.LibIBuddy
                     {
                         _flap = Flap.Off;
                     }
-                    else if ((_flapTimeout % (150 / _threadWaitTime)) == 0)
+                    else if ((_flapTimeout % (200 / _threadWaitTime)) == 0)
                     {
                         _flap = _flap == Flap.Up ? Flap.Down : Flap.Up;
                     }
